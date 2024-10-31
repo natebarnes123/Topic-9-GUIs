@@ -20,15 +20,19 @@ namespace Topic_9_GUIs
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
+            btnQuit.Enabled = true;
+
             if (imgCharacter.Visible)
             {
                 imgCharacter.Visible = false;
+                lblStatus.Text = "Status: ";
             }
             else
             {
                 imgCharacter.Visible = true;
+                lblStatus.Text = "Status: Clicked";
             }
-            lblStatus.Text = "Status: Clicked";
+            
         }
 
         private void imgCharacter_Click(object sender, EventArgs e)
@@ -43,7 +47,18 @@ namespace Topic_9_GUIs
 
         private void btnQuit_Click(object sender, EventArgs e)
         {
-            if (btnQuit)
+            this.Close();
+        }
+
+        private void btnBackround_Click(object sender, EventArgs e)
+        {
+            this.BackColor = Color.Blue;
+            
+        }
+
+        private void imgPractice_MouseHover(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }   
 }

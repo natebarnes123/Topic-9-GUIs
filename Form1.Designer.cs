@@ -35,8 +35,11 @@
             this.lblStatus = new System.Windows.Forms.Label();
             this.imgCharacter = new System.Windows.Forms.PictureBox();
             this.btnQuit = new System.Windows.Forms.Button();
+            this.btnBackround = new System.Windows.Forms.Button();
+            this.imgPractice = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.imgUnused)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgCharacter)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgPractice)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSubmit
@@ -52,9 +55,9 @@
             // imgUnused
             // 
             this.imgUnused.Image = ((System.Drawing.Image)(resources.GetObject("imgUnused.Image")));
-            this.imgUnused.Location = new System.Drawing.Point(611, 12);
+            this.imgUnused.Location = new System.Drawing.Point(728, 12);
             this.imgUnused.Name = "imgUnused";
-            this.imgUnused.Size = new System.Drawing.Size(127, 140);
+            this.imgUnused.Size = new System.Drawing.Size(10, 15);
             this.imgUnused.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgUnused.TabIndex = 1;
             this.imgUnused.TabStop = false;
@@ -93,6 +96,7 @@
             // 
             // btnQuit
             // 
+            this.btnQuit.Enabled = false;
             this.btnQuit.Location = new System.Drawing.Point(224, 84);
             this.btnQuit.Name = "btnQuit";
             this.btnQuit.Size = new System.Drawing.Size(75, 56);
@@ -101,11 +105,34 @@
             this.btnQuit.UseVisualStyleBackColor = true;
             this.btnQuit.Click += new System.EventHandler(this.btnQuit_Click);
             // 
+            // btnBackround
+            // 
+            this.btnBackround.Location = new System.Drawing.Point(143, 146);
+            this.btnBackround.Name = "btnBackround";
+            this.btnBackround.Size = new System.Drawing.Size(75, 58);
+            this.btnBackround.TabIndex = 6;
+            this.btnBackround.Text = "Backround color";
+            this.btnBackround.UseVisualStyleBackColor = true;
+            this.btnBackround.Click += new System.EventHandler(this.btnBackround_Click);
+            // 
+            // imgPractice
+            // 
+            this.imgPractice.Image = ((System.Drawing.Image)(resources.GetObject("imgPractice.Image")));
+            this.imgPractice.Location = new System.Drawing.Point(621, 182);
+            this.imgPractice.Name = "imgPractice";
+            this.imgPractice.Size = new System.Drawing.Size(100, 124);
+            this.imgPractice.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgPractice.TabIndex = 7;
+            this.imgPractice.TabStop = false;
+            this.imgPractice.MouseHover += new System.EventHandler(this.imgPractice_MouseHover);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.imgPractice);
+            this.Controls.Add(this.btnBackround);
             this.Controls.Add(this.btnQuit);
             this.Controls.Add(this.imgCharacter);
             this.Controls.Add(this.lblStatus);
@@ -116,6 +143,7 @@
             this.Text = "Controls, events and properties";
             ((System.ComponentModel.ISupportInitialize)(this.imgUnused)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgCharacter)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgPractice)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -129,6 +157,8 @@
         private System.Windows.Forms.Label lblStatus;
         private System.Windows.Forms.PictureBox imgCharacter;
         private System.Windows.Forms.Button btnQuit;
+        private System.Windows.Forms.Button btnBackround;
+        private System.Windows.Forms.PictureBox imgPractice;
     }
 }
 
